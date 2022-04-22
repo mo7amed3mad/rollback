@@ -25,7 +25,7 @@ jobs:
       - run: return 1
       - destroy_environmen
         when: on_fail
-
+# asd
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
