@@ -1,4 +1,5 @@
-WSTemplateFormatVersion: 2010-09-09
+# Exercise - Rollback
+AWSTemplateFormatVersion: 2010-09-09
 Description: ND9991 C3 L4 
 Resources:
   EC2Instance:
@@ -6,8 +7,10 @@ Resources:
     Properties:
       SecurityGroups:
         - !Ref InstanceSecurityGroup
-      KeyName: asdd
-      ImageId: 'ami-04505e74c0741db8d' # you may need to find out what instance types are available in your region - use https://cloud-images.ubuntu.com/locator/ec2/
+      # Change this, as applicable to you      
+      # Change this, as applicable to you
+      # You may need to find out what instance types are available in your region - use https://cloud-images.ubuntu.com/locator/ec2/
+      ImageId: 'ami-04505e74c0741db8d' 
       InstanceType: t2.micro
   InstanceSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
@@ -17,4 +20,4 @@ Resources:
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
-          CidrIp: 0.0.0.0/0
+          CidrIp: 0.0.0.0/0 
