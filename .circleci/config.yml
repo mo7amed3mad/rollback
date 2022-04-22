@@ -23,7 +23,7 @@ jobs:
       # Fail the job intentionally to simulate an error.
       # Uncomment the line below if you want to fail the current step
       - run: return 1
-      - destroy_environmen
+      - destroy_environment
         when: on_fail
 # asd
 # Invoke jobs via workflows
